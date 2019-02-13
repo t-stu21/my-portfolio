@@ -1,0 +1,384 @@
+/* **************************
+HTML Elements
+************************** */
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+	
+	
+  }
+  
+  /* 
+	##Device = Laptops, Desktops
+	##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+	
+	
+	
+  }
+  
+  /* 
+	##Device = Tablets, Ipads (portrait)
+	##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+	
+	
+	
+  }
+  
+  /* 
+	##Device = Tablets, Ipads (landscape)
+	##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	
+	
+	
+  }
+  
+  /* 
+	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+	
+
+	
+  }
+  
+  /* 
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+	
+	
+	
+  }
+
+* {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	position: relative; /* declared for the stick footer's absolute positioning */
+	min-height: 100%;
+	font-size: 100%;
+
+}
+
+body {
+	color: #777777;
+	/*background-color: #efefef;*/
+	/*background: #efefef url("../images/shattered.png");*/
+  background: -webkit-linear-gradient(22deg, rgb(110, 87, 127), rgb(172, 93, 160));
+  background: linear-gradient(22deg, rgb(110, 87, 127), rgb(172, 93, 160));
+
+
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-bottom: 60px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	font-weight: 100;
+	letter-spacing: 0.02em;
+}
+
+a {
+	cursor: pointer;
+}
+
+p {
+	font-size: 1.1em;
+	line-height: 1.6em;
+	color: rgba(255, 255, 2255, .9);
+
+}
+
+p.description {
+	font-size: 1em;
+	color: #fff;
+}
+
+h1 {
+	font-size: 2.2em;
+	margin: 1.2em 0;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.3em;
+}
+
+label {
+	color: #fff;
+	font-weight: normal;
+	letter-spacing: 0.04em;
+}
+
+html,body {
+	font-family: 'Raleway', sans-serif;
+	padding: 1em 2em;
+	font-size: 18px;
+	background: #222;
+	color: #aaa
+  }
+  
+  h1,h2 {
+	font-weight: 200;
+	margin: 0.4em 0;
+  }
+  h1 { font-size: 3.5em; }
+  h2 {
+	color: #888;
+	font-size: 2em;
+  }
+
+
+/* **************************
+Bootstrap Overrides
+************************** */
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+	outline: 1px solid rgb(128,0,128) !important;
+	outline-offset: -2px;
+}
+
+
+.btn-primary {
+	border: 1px solid #fff;
+	background-color: transparent;
+	transition: all .3s linear;
+	border-radius: 0;
+	margin-top: 16px;
+	box-shadow: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:hover, .btn-primary:active:focus  {
+	background-color: rgba(128,0,128,.8);
+	border-color: rgba(128,0,128,.8);
+	box-shadow: none;
+}
+
+
+
+/* Header + Nav */
+.navbar {
+	border: none;
+	background: none;
+	padding: 20px 0;
+}
+
+.navbar-brand {
+	font-weight: 100;
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	/*background-color: #FF4081;*/
+	background: none;
+	color: #ffffff !important;
+	/* font-variant: small-caps; */
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	background: none;
+}
+
+.nav>li>a {
+	padding: 15px 0;
+	margin: 0 15px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+	transition: color .3s linear;
+	font-weight: normal;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #800080;
+}
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: #fff;
+	background: none;
+	border-bottom: 2px solid #fff;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: transparent;
+}
+
+.thumbnail {
+	padding: 0;
+	border-radius: 0;
+	border: none;
+	background: none;
+	color: #fff;
+}
+
+.thumbnail .caption {
+	padding: 8px;
+}
+
+
+
+.form-control {
+	border-radius: 0;
+	background: none;
+	border-color: rgba(255, 255, 255, 0.2);
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.form-control:focus {
+	border-color: #fff;
+	box-shadow: none;
+}
+
+.form-control::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.2);
+}
+.form-control:-moz-placeholder {
+	color: rgba(255, 255, 255, 0.2);
+}
+.form-control::-moz-placeholder {
+	color: rgba(255, 255, 255, 0.2);
+}
+.form-control:-ms-input-placeholder {
+	color: rgba(255, 255, 255, 0.2);
+}
+
+/* **************************
+Layout and Custom Styles
+************************** */
+
+
+
+/* Main Content Area */
+.main {
+	/*background-color: #ffffff;*/
+	background: none;
+	/*border: 1px solid #dddddd;
+	border-bottom: 3px solid #777;*/
+	border: none;
+	padding-bottom: 40px;
+	margin: 35px 0;
+}
+
+.pad {
+  margin: 20px 0 20px 0;
+}
+
+
+
+/* Portfolio Page */
+.project {
+	margin-bottom: 0px;
+}
+
+.project-thumb {
+	position: relative;
+	max-width: 640px;
+	height: 300px;
+}
+
+.project-thumb img {
+	border-top: 2px solid rgb(172, 93, 160);
+	position: absolute;
+	left: 0;
+ 	transition: opacity .4s ease-out;
+}
+
+.project-thumb img.top:hover {
+	opacity: 0.3;
+}
+
+img#project1 {
+	background: url("./assets/images/geo1-purple.jpg");
+}
+
+/* Contact Page */
+
+
+/* Sidebar */
+.sidebar {
+	/*background-color: #ffffff;
+	border: 1px solid #dddddd;
+	border-bottom: 3px solid #999;*/
+	background: none;
+	margin: 45px 0;
+}
+
+.sidebar h2 {
+	padding: 8px 0;
+}
+
+.sidebar ul {
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.sidebar ul li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: all .2s;
+	-webkit-transition-timing-function: ease-out;
+	transition: all .2s;
+	transition-timing-function: ease-out;
+}
+
+.sidebar ul li:hover {
+	-ms-transform: scale(1.1,1.1);
+	-webkit-transform: scale(1.1,1.1);
+	-moz-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
+}
+
+.social i {
+	font-size: 2.3em;
+	margin-right: 8px;
+	color: #fff;
+}
+
+/* Footer */
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 3em;
+	text-align: center;
+	font-size: 0.8em;
+	color: #784070;
+	background: none;
+}
